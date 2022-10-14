@@ -15,7 +15,7 @@ void moveZeroes(vector<int> &arr)
   }
 }
 
-//* Print fun
+// Print fun
 void print(vector<int> v)
 {
   for (int i = 0; i < v.size(); i++)
