@@ -22,7 +22,6 @@ void solve(vector<string> &ans, string str, string output, int i)
 
 vector<string> subsequences(string str)
 {
-
   vector<string> ans;
   string output = "";
   solve(ans, str, output, 0);

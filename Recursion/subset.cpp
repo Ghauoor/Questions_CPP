@@ -5,7 +5,6 @@ using namespace std;
 
 void solve(vector<int> nums, vector<int> output, int index, vector<vector<int>> &ans)
 {
-
   // Base case
   if (index >= nums.size())
   {
