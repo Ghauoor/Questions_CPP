@@ -18,6 +18,5 @@ int main()
   int n;
   cout << "Enter the value of N: " << endl;
   cin >> n;
-
   cout << fib(n);
 }
