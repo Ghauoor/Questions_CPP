@@ -29,7 +29,7 @@ public:
         vector<string> ans;
         string output;
         int index;
-        string mapping[10] = {"", "", "abc", "def", "ghi", "jkl", "mno", "qres", "tuv", "wxyz"};
+        string mapping[10] = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
 
         if (digits.length() == 0){
             return ans;
