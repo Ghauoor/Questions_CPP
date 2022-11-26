@@ -7,9 +7,15 @@ int main()
 {
     // static allocation
     Human h;
+    cout << "Level is : " << h.getLevel() << endl;
+    cout << "Health is : " << h.getHealth() << endl;
+
+    cout << endl;
 
     // dynamic allocation
     Human *human = new Human;
+    cout << "Level is : " << (*human).getLevel() << endl;
+    cout << "Health is : " << (*human).getHealth() << endl;
 
     /*
      // create obj
