@@ -5,13 +5,14 @@ using namespace std;
 
 int main()
 {
-
-    Human human;
-
-    Human *h = new Human();
+    Human naruto(80, 'A');
     
-
     /*
+    Human naruto(22, 'B');
+    naruto.print();
+
+    cout << "Address of Naruto " << &naruto << endl;
+
     // static allocation
     Human h;
     h.setHealth(90);

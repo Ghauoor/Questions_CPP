@@ -22,13 +22,21 @@ public:
 
     Human(int health)
     {
-        health = health;
+        cout << "this -> " << this << endl;
+        this->health = health;
+    }
+
+    Human(int health, char level)
+    {
+        this->level = level;
+        this->health = health;
     }
 
     // Behaviour
     void print()
     {
         cout << level << endl;
+        cout << health << endl;
     }
 
     // Getter Setter
