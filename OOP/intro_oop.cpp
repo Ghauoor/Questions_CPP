@@ -5,8 +5,15 @@ using namespace std;
 
 int main()
 {
+
+    Human human;
+
+    /*
     // static allocation
     Human h;
+    h.setHealth(90);
+    h.setLevel('B');
+
     cout << "Level is : " << h.getLevel() << endl;
     cout << "Health is : " << h.getHealth() << endl;
 
@@ -14,10 +21,20 @@ int main()
 
     // dynamic allocation
     Human *human = new Human;
+
+    human->setLevel('A');
+    human->setHealth(80);
+
     cout << "Level is : " << (*human).getLevel() << endl;
     cout << "Health is : " << (*human).getHealth() << endl;
 
-    /*
+    cout << endl;
+
+    // Another way
+    cout << "Level is : " << human->getLevel() << endl;
+    cout << "Health is : " << human->getHealth() << endl;
+
+
      // create obj
      Human naruto;
      //  naruto.health = 70;

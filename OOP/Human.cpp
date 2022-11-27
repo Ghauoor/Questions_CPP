@@ -4,12 +4,19 @@ using namespace std;
 
 class Human
 {
+
 private: // Access Modifiers
     // Properties
     int health;
 
 public:
     char level;
+
+    // Contrutor
+    Human()
+    {
+        cout << "Constructor Called" << endl;
+    }
 
     // Behaviour
     void print()
