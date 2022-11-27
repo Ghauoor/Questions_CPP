@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 
 using namespace std;
 
@@ -11,11 +12,12 @@ private: // Access Modifiers
 
 public:
     char level;
-
+    char *name;
     // Contructor
     Human()
     {
         cout << "Constructor Called" << endl;
+        name = new char[100];
     }
 
     // Perameterized Constructor
@@ -43,9 +45,13 @@ public:
     // Behaviour
     void print()
     {
-        cout << "Copy Constructor Called" << endl;
-        cout << this->level << endl;
-        cout << this->health << endl;
+        cout << endl;
+
+        cout << "[ Name : " << this->name << endl;
+        cout << "Level : " << this->level << endl;
+        cout << "Health : " << this->health << " ]";
+        cout << endl
+             << endl;
     }
 
     // Getter Setter
@@ -68,5 +74,10 @@ public:
     void setLevel(char ch)
     {
         level = ch;
+    }
+
+    void setName(char name[])
+    {
+        strcpy(this->name, name);
     }
 };

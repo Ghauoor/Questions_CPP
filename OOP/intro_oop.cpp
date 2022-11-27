@@ -5,6 +5,16 @@ using namespace std;
 
 int main()
 {
+    Human naruto;
+    naruto.setHealth(12);
+    naruto.setLevel('D');
+    char name[10] = "Naruto";
+    naruto.setName(name);
+
+    naruto.print();
+
+    /*
+
     Human naruto(80, 'A');
     naruto.print();
 
@@ -13,7 +23,10 @@ int main()
     // Copy Constructor
     Human boruto(naruto);
     boruto.print();
-    /*
+
+
+
+
     Human naruto(22, 'B');
     naruto.print();
 
