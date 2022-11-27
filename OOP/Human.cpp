@@ -13,6 +13,7 @@ private: // Access Modifiers
 public:
     char level;
     char *name;
+    static int timeToComplete;
     // Contructor
     Human()
     {
@@ -61,6 +62,12 @@ public:
         cout << "Health : " << this->health << " ]";
         cout << endl
              << endl;
+    }
+
+    static int staticMethod()
+    {
+        cout << "Static Method is Called " << endl;
+        return timeToComplete;
     }
 
     // Getter Setter
