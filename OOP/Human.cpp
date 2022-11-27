@@ -12,7 +12,7 @@ private: // Access Modifiers
 public:
     char level;
 
-    // Contrutor
+    // Contructor
     Human()
     {
         cout << "Constructor Called" << endl;
