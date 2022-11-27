@@ -32,11 +32,20 @@ public:
         this->health = health;
     }
 
+    // Copy Constructor
+
+    Human(Human &anyName)
+    {
+        this->health = anyName.health;
+        this->level = anyName.level;
+    }
+
     // Behaviour
     void print()
     {
-        cout << level << endl;
-        cout << health << endl;
+        cout << "Copy Constructor Called" << endl;
+        cout << this->level << endl;
+        cout << this->health << endl;
     }
 
     // Getter Setter

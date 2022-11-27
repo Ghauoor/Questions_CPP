@@ -6,7 +6,13 @@ using namespace std;
 int main()
 {
     Human naruto(80, 'A');
-    
+    naruto.print();
+
+    cout << endl;
+
+    // Copy Constructor
+    Human boruto(naruto);
+    boruto.print();
     /*
     Human naruto(22, 'B');
     naruto.print();
