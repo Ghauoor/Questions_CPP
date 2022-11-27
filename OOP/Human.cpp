@@ -36,10 +36,19 @@ public:
 
     // Copy Constructor
 
-    Human(Human &anyName)
+    Human(Human &temp)
     {
-        this->health = anyName.health;
-        this->level = anyName.level;
+        char *ch = new char[strlen(temp.name) + 1];
+        strcpy(ch, temp.name);
+        this->name = ch;
+        this->health = temp.health;
+        this->level = temp.level;
+    }
+
+    // Destructor
+    ~Human()
+    {
+        cout << "Destructor Call" << endl;
     }
 
     // Behaviour

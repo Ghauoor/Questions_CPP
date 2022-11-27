@@ -5,15 +5,31 @@ using namespace std;
 
 int main()
 {
-    Human naruto;
+    Human a;
+
+    Human *b = new Human();
+    delete b;
+
+    /*
+
     naruto.setHealth(12);
     naruto.setLevel('D');
     char name[10] = "Naruto";
     naruto.setName(name);
 
+    Human h(naruto);
+    h.print();
+
+    naruto.name[0] = 'G';
     naruto.print();
 
-    /*
+    h.print();
+
+    naruto = h;
+
+    naruto.print();
+
+    h.print();
 
     Human naruto(80, 'A');
     naruto.print();
