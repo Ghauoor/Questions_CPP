@@ -18,6 +18,13 @@ public:
         cout << "Constructor Called" << endl;
     }
 
+    // Perameterized Constructor
+
+    Human(int health)
+    {
+        health = health;
+    }
+
     // Behaviour
     void print()
     {

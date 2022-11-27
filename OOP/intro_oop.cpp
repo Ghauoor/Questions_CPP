@@ -8,6 +8,9 @@ int main()
 
     Human human;
 
+    Human *h = new Human();
+    
+
     /*
     // static allocation
     Human h;
