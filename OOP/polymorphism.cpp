@@ -43,8 +43,31 @@ public:
     }
 };
 
+class Animal
+{
+public:
+    void speak()
+    {
+        cout << "Speaking " << endl;
+    }
+};
+
+class Dog : public Animal
+{
+
+public:
+    void speak()
+    {
+        cout << "Barking " << endl;
+    }
+};
+
 int main()
 {
+
+    Dog object;
+    object.speak();
+
     A obj;
     obj.sayHello();
 
@@ -53,4 +76,6 @@ int main()
     obj2.a = 7;
     obj1 + obj2;
     obj1();
+
+    return 0;
 }
