@@ -121,7 +121,7 @@ void deleteNode(Node *&tail, int value)
 
 bool isCircularList(Node *head)
 {
-    // empty list
+    //* empty list
     if (head == NULL)
     {
         return true;
@@ -168,7 +168,6 @@ bool detectLoop(Node *head)
 
 int main()
 {
-
     Node *tail = NULL;
 
     // insertNode(tail, 5, 3);
