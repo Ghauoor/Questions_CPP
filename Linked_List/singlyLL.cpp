@@ -158,10 +158,10 @@ bool detectLoop(Node *head)
 
 // floyed loop detection
 
-bool floyedDetectLoop(Node *head)
+Node *floyedDetectLoop(Node *head)
 {
     if (head == NULL)
-        return false;
+        return head;
 
     Node *slow = head;
     Node *fast = head;
@@ -180,7 +180,30 @@ bool floyedDetectLoop(Node *head)
             return slow;
     }
 
-    return false;
+    return NULL;
+}
+
+// Starting Node of Loop in SLL
+
+Node *getStartingNOde(Node *head)
+{
+    if (head == NULL)
+    {
+        return head;
+    }
+
+    Node *intersection = floyedDetectLoop(head);
+
+    Node *slow = head;
+
+    while (slow != intersection)
+    {
+        slow = slow->next;
+
+        intersection = intersection->next;
+    }
+
+    return slow;
 }
 
 int main()
