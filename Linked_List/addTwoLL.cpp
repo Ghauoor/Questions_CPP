@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-
+//* Pass the GFG Test cases
 class Solution
 {
     struct Node
