@@ -28,7 +28,7 @@ private:
             tail = newNode;
             return;
         }
-        else
+        else 
         {
             tail->next = newNode;
             tail = newNode;
