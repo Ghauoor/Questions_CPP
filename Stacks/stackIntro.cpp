@@ -13,20 +13,20 @@ int main()
     // pop
     a.pop();
 
-    cout << "Parinting the Top Element " << a.top();
+    cout << "Parinting the Top Element " << a.top() << endl;
 
     // Check Empty
 
     if (a.empty())
     {
-        cout << "Stack is Empty";
+        cout << "Stack is Empty" << endl;
     }
     else
     {
         cout << "Stack is not Empty";
     }
 
-    
+
 
     return 0;
 }
