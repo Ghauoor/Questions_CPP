@@ -31,7 +31,7 @@ Node *buildTree(Node *root)
         return NULL;
     }
 
-    //! Recursive Calls
+    //! Recursive Call
     cout << "Enter data for Interting in Left: " << endl;
     root->left = buildTree(root->left);
     cout << "Enter data for Interting in Right: " << endl;
