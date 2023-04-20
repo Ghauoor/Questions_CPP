@@ -79,7 +79,7 @@ void levelOrderTraversal(Node *root)
     }
 }
 
-// inOrder Traversal --> (LNR)
+// inOrder Traversal --> (NLR)
 
 void inorder(Node *root)
 {
