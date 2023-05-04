@@ -1,4 +1,5 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
 using namespace std;
 
 struct Node
@@ -29,5 +30,5 @@ public:
         {
             return min(left, right) + 1;
         }
-    }  
+    }
 };
